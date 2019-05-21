@@ -11,12 +11,15 @@
           <a class="main-header-logo" href="index.html">
             <img src="img/logo-header.svg" width="108" height="18" alt="Логотип магазина Техномарт">
           </a>
-          <div class="header-search">Поиск</div>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" value="Поиск:">
+            <button type="submit"></button>
+          </form>
           <div>
-            <a href="#">Закладки</a>
+            <a href="#">Закладки: 0</a>
           </div>
           <div class="admin-panel-current">
-            <a href="#">Корзина</a>
+            <a href="#">Корзина: 10</a>
           </div>
           <div>
             <a href="#">Оформить заказ</a>
@@ -79,7 +82,7 @@
           <h2 class="visually-hidden">Навигационная цепочка</h2>
           <ul class="breadcrums-list">
             <li class="breadcrums-item">
-              <a class="breadcrums-link" href="#"></a>
+              <a class="breadcrums-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrums-item">
               <a class="breadcrums-link" href="#">Каталог</a>
@@ -95,37 +98,55 @@
       </section>
       <section class="catalog">
         <div class="container">
-          <h2>ПЕРФОРАТОРЫ</h2>
+          <h2>Перфораторы</h2>
           <section class="filters">
           <!-- Здесь будет фильтр -->
-            <form action="#" method="get">
-              <div class="makers">
-                <h3>Производители:</h3>
-                <label>
-                  <input type="checkbox" checked name="bosch">bosch
-                </label>
-                <label>
-                  <input type="checkbox" name="интерскол">интерскол
-                </label>
-                <label>
-                  <input type="checkbox" checked name="makita">makita
-                </label>
-                <label>
-                  <input type="checkbox" name="dewalt">dewalt
-                </label>
-                <label>
-                  <input type="checkbox" name="hitachi">hitachi
-                </label>
-              </div>
-              <div class="filter-power">
-                <h3>Питание:</h3>
-                <label>
-                  <input type="radio" value="Аккумуляторные" name="power" checked>Аккумуляторные
-                </label>
-                <label>
-                  <input type="radio" value="Сетевые" name="power">Сетевые
-                </label>
-              </div>
+            <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-makers">
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-input filter-input-checkbox" type="checkbox" checked name="bosch">bosch
+                    </label>
+                  </li>
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-input filter-input-checkbox" type="checkbox" name="интерскол">интерскол
+                    </label>
+                  </li>
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-input filter-input-checkbox" type="checkbox" checked name="makita">makita
+                    </label>
+                  </li>
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt">dewalt
+                    </label>
+                  </li>
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi">hitachi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-power">
+                <legend>Питание:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-input filter-input-radio" type="radio" value="Аккумуляторные" name="power" checked>Аккумуляторные
+                    </label>
+                  </li>
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-input filter-input-radio" type="radio" value="Сетевые" name="power">Сетевые
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
               <input type="submit" value="ПОКАЗАТЬ">
             </form>
           </section>
@@ -140,8 +161,8 @@
                 <span>22500 Р.</span>
                 <a href="#">15500 Р.</a>
                 <div class="hover">
-                  <button class="hover-cart" type="button">Купить</button>
-                  <button class="hover-bookmark" type="button">В закладки</button>
+                  <button class="hover-cart" type="submit">Купить</button>
+                  <button class="hover-bookmark" type="submit">В закладки</button>
                 </div>
               </li>
 
@@ -153,8 +174,8 @@
               <span>30500 Р.</span>
               <a href="#">25500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
 
@@ -162,8 +183,8 @@
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <a href="#">12500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
 
@@ -175,8 +196,8 @@
               <span>22500 Р.</span>
               <a href="#">15500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
 
@@ -188,8 +209,8 @@
               <span>30500 Р.</span>
               <a href="#">25500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
 
@@ -200,8 +221,8 @@
               </div>
               <a href="#">12500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
 
@@ -213,8 +234,8 @@
               <span>22500 Р.</span>
               <a href="#">15500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
 
@@ -226,8 +247,8 @@
               <span>30500 Р.</span>
               <a href="#">25500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
 
@@ -238,8 +259,8 @@
               </div>
               <a href="#">12500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="button">Купить</button>
-                <button class="hover-bookmark" type="button">В закладки</button>
+                <button class="hover-cart" type="submit">Купить</button>
+                <button class="hover-bookmark" type="submit">В закладки</button>
               </div>
             </li>
           </ul>
@@ -247,7 +268,7 @@
             <li class="pagination-item pagination-item-current"><a>1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -332,5 +353,11 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-cart">
+      <h2>Товар добавлен в корзину!</h2>
+      <a href="#">Оформить заказ</a>
+      <button class="modal-continue" type="button" name="button">Продолжить покупки</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>

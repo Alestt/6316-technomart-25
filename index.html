@@ -11,19 +11,22 @@
            <a class="main-header-logo">
              <img src="img/logo-header.svg" width="108" height="18" alt="Логотип магазина Техномарт">
            </a>
-           <div class="main-header-search">Поиск</div>
+           <form class="search" action="https://echo.htmlacademy.ru" method="get">
+             <input type="search" value="Поиск:">
+             <button type="submit"></button>
+           </form>
            <div>
-            <a href="#">Закладки</a>
-          </div>
+            <a href="#">Закладки: 0</a>
+           </div>
            <div>
-             <a href="#">Корзина</a>
+             <a href="#">Корзина: 0</a>
            </div>
            <div>
              <a href="#">Оформить заказ</a>
            </div>
          </div>
        </section>
-         <section class="info-panel">
+       <section class="info-panel">
            <div class="container">
              <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
              <address class="header-address">
@@ -95,7 +98,7 @@
            <h2>КОНТАКТЫ</h2>
            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
            <a href="#">
-             <img src="img/map-small.png" width="300" height="158" alt="Большая Конюшенная ул.,19">
+             <img src="img/map-small.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
            </a>
            <a class="about-us-link" href="#">Заблудились? НАПИШИТЕ НАМ!</a>
           </div>
@@ -180,5 +183,33 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden"> Напишите нам!</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us-item">
+          <label for="write-us-name">Ваше имя:</label>
+          <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-letter">Текст письма:</label>
+          <textarea id="write-us-letter" name="letter" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="modal-send" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+    </section>
+    <section class="modal modal-map">
+      <div class="container">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p class="map-item">
+          <img src="img/map.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
+    </section>
   </body>
 </html>
