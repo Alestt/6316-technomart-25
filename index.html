@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="main-header">
-       <section class="admin-panel">
+       <div class="header-top">
          <div class="container">
            <a class="main-header-logo">
              <img src="img/logo-header.svg" width="108" height="18" alt="Логотип магазина Техномарт">
            </a>
            <form class="search" action="https://echo.htmlacademy.ru" method="get">
-             <input type="search" value="Поиск:">
-             <button type="submit"></button>
+             <input type="search" placeholder="Поиск:">
+             <button type="submit" aria-label="Кнопка поиска по сайту"></button>
            </form>
            <div>
             <a href="#">Закладки: 0</a>
@@ -25,7 +25,7 @@
              <a href="#">Оформить заказ</a>
            </div>
          </div>
-       </section>
+       </div>
        <section class="info-panel">
            <div class="container">
              <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -53,7 +53,7 @@
               <a class="main-navigation-link" href="#">Компания</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Каталог</a>
+              <a class="main-navigation-link" href="catalog.html">Каталог</a>
             </li>
             <li class="main-navigation-item">
               <a class="main-navigation-link" href="#">Новости</a>
@@ -110,7 +110,7 @@
       <div class="footer-top">
         <div class="container">
           <a class="main-footer-logo">
-            <img src="img/logo-footer.svg" width="137" height="22"alt="Логотип магазина Техномарт" >
+            <img src="img/logo-footer.svg" width="137" height="22" alt="Логотип магазина Техномарт">
           </a>
           <ul class="footer-site-navigation">
             <li class="footer-site-navigation-item">
@@ -184,19 +184,19 @@
       </div>
     </footer>
     <section class="modal modal-write-us">
-      <h2 class="visually-hidden"> Напишите нам!</h2>
+      <h2 class="visually-hidden">Письмо нам</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us-item">
           <label for="write-us-name">Ваше имя:</label>
-          <input type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+          <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="write-us-item">
           <label for="write-us-email">Ваш e-mail:</label>
-          <input type="email" id="write-us-email" name="email" placeholder="email@example.com">
+          <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p class="write-us-item">
           <label for="write-us-letter">Текст письма:</label>
-          <textarea id="write-us-letter" name="letter" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+          <textarea id="write-us-letter" name="letter" placeholder="В свободной форме" rows="8" cols="80"></textarea>
         </p>
         <button class="modal-send" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>

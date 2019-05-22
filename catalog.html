@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="admin-panel">
+      <div class="header-top">
         <div class="container">
           <a class="main-header-logo" href="index.html">
             <img src="img/logo-header.svg" width="108" height="18" alt="Логотип магазина Техномарт">
           </a>
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" value="Поиск:">
-            <button type="submit"></button>
+            <input type="search" placeholder="Поиск:">
+            <button type="submit" aria-label="Кнопка поиска по сайту"></button>
           </form>
           <div>
             <a href="#">Закладки: 0</a>
@@ -25,7 +25,7 @@
             <a href="#">Оформить заказ</a>
           </div>
         </div>
-      </section>
+      </div>
       <section class="info-panel">
         <div class="container">
           <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -58,7 +58,7 @@
               <a class="main-navigation-link" href="#">Компания</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">Каталог</a>
+              <a class="main-navigation-link" href="catalog.html">Каталог</a>
             </li>
             <li class="main-navigation-item">
               <a class="main-navigation-link" href="#">Новости</a>
@@ -99,7 +99,8 @@
       <section class="catalog">
         <div class="container">
           <h2>Перфораторы</h2>
-          <section class="filters">
+          <section class="catalog-filters">
+            <h3>Фильтр:</h3>
           <!-- Здесь будет фильтр -->
             <form class="filters" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-makers">
@@ -107,7 +108,7 @@
                 <ul>
                   <li class="filter-option">
                     <label>
-                      <input class="filter-input filter-input-checkbox" type="checkbox" checked name="bosch">bosch
+                      <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>bosch
                     </label>
                   </li>
                   <li class="filter-option">
@@ -117,7 +118,7 @@
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="filter-input filter-input-checkbox" type="checkbox" checked name="makita">makita
+                      <input class="filter-input filter-input-checkbox" type="checkbox" name="makita" checked>makita
                     </label>
                   </li>
                   <li class="filter-option">
@@ -137,12 +138,12 @@
                 <ul>
                   <li class="filter-option">
                     <label>
-                      <input class="filter-input filter-input-radio" type="radio" value="Аккумуляторные" name="power" checked>Аккумуляторные
+                      <input class="filter-input filter-input-radio" type="radio" name="power" value="Аккумуляторные" checked>Аккумуляторные
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input class="filter-input filter-input-radio" type="radio" value="Сетевые" name="power">Сетевые
+                      <input class="filter-input filter-input-radio" type="radio" name="power" value="Сетевые">Сетевые
                     </label>
                   </li>
                 </ul>
@@ -151,116 +152,116 @@
             </form>
           </section>
           <section class="catalog-perforator">
-            <h2 class="visually-hidden">Список перфораторов</h2>
+            <h3 class="visually-hidden">Список перфораторов:</h3>
             <ul class="catalog-perforator-list">
               <li class="catalog-perforator-item">
-                <h3>Перфоратор BOSCH BFG 3000</h3>
+                <h4>Перфоратор BOSCH BFG 3000</h4>
                 <div>
                   <img src="img/Perforator_1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </div>
                 <span>22500 Р.</span>
                 <a href="#">15500 Р.</a>
                 <div class="hover">
-                  <button class="hover-cart" type="submit">Купить</button>
-                  <button class="hover-bookmark" type="submit">В закладки</button>
+                  <button class="hover-cart" type="button">Купить</button>
+                  <button class="hover-bookmark" type="button">В закладки</button>
                 </div>
               </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <h4>Перфоратор BOSCH BFG 6000</h4>
               <div>
                 <img src="img/Perforator_2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <span>30500 Р.</span>
               <a href="#">25500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <h4>Перфоратор BOSCH BFG 2000</h4>
               <a href="#">12500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <h4>Перфоратор BOSCH BFG 3000</h4>
               <div>
                 <img src="img/Perforator_4.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               </div>
               <span>22500 Р.</span>
               <a href="#">15500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <h4>Перфоратор BOSCH BFG 6000</h4>
               <div>
                 <img src="img/Perforator_5.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <span>30500 Р.</span>
               <a href="#">25500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <h4>Перфоратор BOSCH BFG 3000</h4>
               <div>
                 <img src="img/Perforator_6.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               </div>
               <a href="#">12500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <h4>Перфоратор BOSCH BFG 3000</h4>
               <div>
                 <img src="img/Perforator_7.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               </div>
               <span>22500 Р.</span>
               <a href="#">15500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <h4>Перфоратор BOSCH BFG 6000</h4>
               <div>
                 <img src="img/Perforator_8.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               </div>
               <span>30500 Р.</span>
               <a href="#">25500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
 
             <li class="catalog-perforator-item">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <h4>Перфоратор BOSCH BFG 2000</h4>
               <div>
                 <img src="img/Perforator_9.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               </div>
               <a href="#">12500 Р.</a>
               <div class="hover">
-                <button class="hover-cart" type="submit">Купить</button>
-                <button class="hover-bookmark" type="submit">В закладки</button>
+                <button class="hover-cart" type="button">Купить</button>
+                <button class="hover-bookmark" type="button">В закладки</button>
               </div>
             </li>
           </ul>
@@ -354,7 +355,8 @@
       </div>
     </footer>
     <section class="modal modal-cart">
-      <h2>Товар добавлен в корзину!</h2>
+      <h2 class="visually-hidden">Действия с товаром</h2>
+      <p>Товар добавлен в корзину!</p>
       <a href="#">Оформить заказ</a>
       <button class="modal-continue" type="button" name="button">Продолжить покупки</button>
       <button class="modal-close" type="button">Закрыть</button>
