@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
-  font-style: normal;
   color: #000;
   background-color: #fff;
 }
@@ -55,7 +55,31 @@ a {
 .user-search button:focus,
 .user-search input:focus {
   color: #000;
-  background-color: #293449;
+  background-color: #fff;
+}
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+input::-moz-placeholder {
+  color: #fff;
+}
+input:-moz-placeholder {
+  color: #fff;
+}
+input:-ms-input-placeholder{
+  color: #fff;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 .user-bookmark,
 .user-cart,
@@ -90,25 +114,28 @@ a {
   background-color: #f4f7f9;
 }
 .info-panel h1 {
-  color: #ee3643;
+  width: 198px;
   font-style: italic;
   font-size: 16px;
-  line-height: 23px;
-  width: 198px;
   font-weight: 400;
+  line-height: 23px;
+  color: #ee3643;
 }
 .header-address-phone {
-  font-style: normal;
-  color: #e9292a;
-  font-size: 21px;
-  line-height: 21px;
-  border: 3px solid #fff;
   width: 270px;
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #e9292a;
+  text-align:center;
+  border: 3px solid #fff;
 }
 .header-address-street {
   font-style: normal;
   font-size: 14px;
-  line-height: 24x;
+  font-weight: 700;
+  line-height: 24px;
   color: #32425c;
 }
 .user-navigation-list,
@@ -119,8 +146,8 @@ a {
 }
 .user-navigation-list a {
   font-size: 21px;
+  font-weight: 700;
   line-height: 21px;
-  font-weight: 400;
   color: #000;
   background-color: #fff;
 }
@@ -132,15 +159,18 @@ a {
 }
 .user-profile-list a {
   font-size: 21px;
+  font-weight: 700;
   line-height: 21px;
   color: #000;
   background-color: #fff;
+
 }
 .user-profile-list a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 .user-panel-list a {
   font-size: 16px;
+  font-weight: 700;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
@@ -154,8 +184,8 @@ a {
 /* nav */
 .main-navigation-list {
   font-size: 17px;
-  line-height: 17px;
   font-weight: 400;
+  line-height: 17px;
   color: #fff;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
@@ -187,108 +217,103 @@ a {
 /* catalog */
 .catalog h2 {
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   color: #32425c;
-  background-color: #f2f6f8;
   text-transform: uppercase;
-  font-weight: 400;
+  background-color: #f2f6f8;
 }
 .filters fieldset {
+  font-family: "PT Sans", Arial, sans-serif;
   border: none;
 }
 .filters legend {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
+  font-weight: 700;
   line-height: 30px;
   color: #000;
-  font-weight: 700;
   text-transform: uppercase;
 }
 .filters ul {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
+  font-weight: 400;
   line-height: 20px;
   color: #000;
-  font-weight: 400;
   text-transform: uppercase;
 }
 .filters input[type="submit"] {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  font-weight: 400;
   line-height: 18px;
   color: #000;
-  background-color: #fff;
-  font-weight: 400;
   text-transform: uppercase;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 /* catalog-perforator */
 .catalog-perforator-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
   border: 1px solid #e5e5e5;
 }
 .catalog-perforator-item:hover {
   box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.2);
 }
 .catalog-perforator-item a {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000;
-  font-weight: 700;
-}
-.catalog-item-title {
-  text-transform: uppercase;
 }
 .old-price {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
-  font-weight: 700;
   text-transform: uppercase;
   text-decoration: line-through;
 }
 .price-perforator {
-  font-family: "PT Sans", Arial, sans-serif;
+  width: 122px;
   font-size: 17px;
   line-height: 18px;
   color: #fff;
-  background-color: #ee3643;
-  font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
-  border-radius: 2px;
-  width: 122px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border-radius: 3px;
+
 }
 .hover-cart {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #fff;
-  background-color: #63a63e;
-  font-weight: 400;
-  text-transform: uppercase;
   text-align: center;
-  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: #63a63e;
   border-bottom: 3px solid #367315;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-radius: 3px;
 }
 .hover-cart:hover {
   background-color: #5fbb2d;
 }
 .hover-cart:focus {
-  background-color: #518534;
   border-bottom: 3px solid #518534;
+  background-color: #518534;
 }
 .hover-bookmark {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
-  background-color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
   text-align: center;
-  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: #fff;
   border: 3px solid #63a63e;
+  border-radius: 3px;
 }
 .hover-bookmark:hover {
   border-color: #32425c;
@@ -301,13 +326,13 @@ a {
 .pagination-list a {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  font-weight: 400;
   line-height: 18px;
   color: #000;
-  background-color: #fff;
-  font-weight: 400;
   text-align: center;
-  border-radius: 2px;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 .pagination-list a:hover {
   border-color: #bdc6ca;
@@ -325,15 +350,15 @@ a {
 }
 .main-bottom h2 {
   font-size: 30px;
+  font-weight: 700;
   line-height: 30px;
-  font-weight: 400;
   color: #000;
   text-transform: uppercase;
 }
 .main-bottom p {
   font-size: 13px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
   color: #000;
 }
 .firms {
@@ -348,13 +373,13 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #fff;
-  background-color: #ee3643;
   text-transform: uppercase;
+  background-color: #ee3643;
 }
 /* main-footer */
-.footer-color {
-  background-color: #32425c;
+.footer-top-middle {
   color: #f3f7f9;
+  background-color: #32425c;
 }
 .footer-site-navigation-list,
 .footer-catalog-navigation-list,
@@ -384,9 +409,9 @@ a {
   text-decoration: none;
 }
 .footer-address {
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  font-style: normal;
 }
 .footer-catalog-navigation-list a {
   font-size: 18px;
