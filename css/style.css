@@ -19,6 +19,7 @@ a {
   background-color: #293449;
 }
 .main-header-logo {
+  display: block;
   width: 220px;
   min-height: 42px;
   background-color: #ee3643;
@@ -112,6 +113,7 @@ input:focus:-ms-input-placeholder {
 /* info-panel */
 .header-middle {
   background-color: #f4f7f9;
+  min-height: 279px;
 }
 .info-panel h1 {
   width: 198px;
@@ -448,4 +450,43 @@ input:focus:-ms-input-placeholder {
 .footer-contacts a:focus,
 .footer-copyright-htmlacademy a:focus {
   text-decoration: none;
+}
+
+/* стилизация сеток */
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header {
+  margin-bottom: 59px;
+}
+.header-top .container {
+  display: flex;
+}
+.user-search {
+  width: 270px;
+}
+.info-panel {
+  padding-top: 40px;
+}
+.info-panel .container {
+  display: flex;
+}
+.info-panel h1 {
+  width: 197px;
+  margin-left: 52px;
+  margin-right: 71px;
+}
+.user-navigation-list {
+  display: flex;
+  width: 281px;
+}
+.main-navigation {
+
+}
+.main-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
 }
