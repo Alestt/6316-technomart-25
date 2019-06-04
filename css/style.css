@@ -12,6 +12,25 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* стилизация шапки */
 /* heder-top */
 .header-top {
@@ -20,7 +39,7 @@ a {
 }
 .main-header-logo {
   width: 220px;
-  min-height: 42px;
+  min-height: 44px;
   background-color: #ee3643;
 }
 .main-header-logo:hover {
@@ -126,7 +145,6 @@ input:focus:-ms-input-placeholder {
   color: #ee3643;
 }
 .header-address-phone {
-  /* width: 193px; */
   font-style: normal;
   font-size: 21px;
   font-weight: 400;
@@ -162,7 +180,7 @@ input:focus:-ms-input-placeholder {
 }
 .user-profile-list a {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 21px;
   color: #000;
   background-color: #fff;
@@ -173,7 +191,7 @@ input:focus:-ms-input-placeholder {
 }
 .user-panel-list a {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
@@ -258,7 +276,7 @@ input:focus:-ms-input-placeholder {
 .catalog-perforator-item {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #ccc;
 }
 .catalog-perforator-item:hover {
   box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.2);
@@ -280,13 +298,14 @@ input:focus:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
   background-color: #ee3643;
   border-radius: 3px;
 
 }
-.hover-cart {
+.hover .hover-cart {
+  width: 131px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -307,7 +326,8 @@ input:focus:-ms-input-placeholder {
   border-bottom: 3px solid #518534;
   background-color: #518534;
 }
-.hover-bookmark {
+.hover .hover-bookmark {
+  width: 127px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -353,12 +373,13 @@ input:focus:-ms-input-placeholder {
 }
 .main-bottom h2 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 30px;
   color: #000;
   text-transform: uppercase;
 }
 .main-bottom p {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -378,6 +399,7 @@ input:focus:-ms-input-placeholder {
   color: #fff;
   text-transform: uppercase;
   background-color: #ee3643;
+  border-radius: 3px;
 }
 /* main-footer */
 .footer-top-middle {
@@ -393,7 +415,7 @@ input:focus:-ms-input-placeholder {
   width: 220px;
   min-height: 63px;
   background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
+  /* border-bottom: 5px solid #b52933; */
 }
 .main-footer-logo .center-img {
   display: block;
@@ -409,6 +431,7 @@ input:focus:-ms-input-placeholder {
   text-decoration: underline;
 }
 .footer-site-navigation-list a:focus {
+  color: rgba(241, 245, 247, 0.5);
   text-decoration: none;
 }
 .footer-address {
@@ -425,6 +448,7 @@ input:focus:-ms-input-placeholder {
   text-decoration: underline;
 }
 .footer-catalog-navigation-list a:focus {
+  color: rgba(255, 209, 128, 0.5);
   text-decoration: none;
 }
 .footer-bottom {
@@ -433,10 +457,17 @@ input:focus:-ms-input-placeholder {
   color: #fff;
   background-color: #293449;
 }
-.footer-social a {
+.footer-social-link{
+  width: 43px;
+  height: 43px;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
+  background-color: #212a3a;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #ee3643;
 }
 .footer-contacts a,
 .footer-copyright-htmlacademy a {
@@ -450,8 +481,10 @@ input:focus:-ms-input-placeholder {
 }
 .footer-contacts a:focus,
 .footer-copyright-htmlacademy a:focus {
+  color: #ee3643;
   text-decoration: none;
 }
+
 
 /* стилизация сеток */
 .container {
@@ -459,34 +492,31 @@ input:focus:-ms-input-placeholder {
   margin: 0 auto;
   padding: 0 10px;
 }
-.main-header {
-  margin-bottom: 59px;
-}
 .header-top .container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 /*---- */
-.user-search input {
+.user-search-input {
   width: 270px;
   box-sizing: border-box;
   padding: 12px 0 12px 50px;
 }
 .user-bookmark {
-  padding-top: 12px;
+  padding-top: 13px;
   padding-left: 45px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
 }
 .user-cart {
-  padding-top: 12px;
+  padding-top: 13px;
   padding-left: 50px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
 }
 .user-order {
-  padding-top: 12px;
+  padding-top: 13px;
   padding-left: 22px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
   margin-right: 0;
 }
 /* ----- */
@@ -494,6 +524,7 @@ input:focus:-ms-input-placeholder {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding-top: 47px;
   margin-bottom: 36px;
 }
@@ -501,6 +532,7 @@ input:focus:-ms-input-placeholder {
   margin: 0;
   padding: 0;
   padding-left: 50px;
+  margin-right: 25px;
 }
 .header-address-phone {
   margin: 0;
@@ -540,6 +572,7 @@ input:focus:-ms-input-placeholder {
 .main-navigation-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -557,4 +590,287 @@ input:focus:-ms-input-placeholder {
 }
 .main-navigation-item:last-of-type a {
   padding-right: 54px;
+}
+
+/* стили для шапки каталога */
+.user-profile-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  margin-left: 5px;
+}
+.user-profile-link {
+  padding-top: 13px;
+  padding-left: 47px;
+  padding-right: 68px;
+  padding-bottom: 10px;
+}
+
+.user-panel-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 17px;
+}
+.user-panel-item:first-of-type a {
+  margin-right: 32px;
+}
+
+/* --- */
+.main-bottom .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-bottom h2,
+.main-bottom p,
+.main-bottom ul {
+  margin: 0;
+  padding: 0;
+}
+.about-us {
+  width: 532px;
+  margin-top: 80px;
+  margin-right: 108px;
+  margin-bottom: 86px;
+}
+.contacts {
+  width: 300px;
+  margin-top: 80px;
+  margin-bottom: 86px;
+}
+.main-bottom h2 {
+  padding-bottom: 25px;
+}
+.about-us p:nth-child(2) {
+  padding-bottom: 25px;
+}
+.about-us p:nth-child(3) {
+  padding-bottom: 21px;
+}
+.contacts p {
+  padding-right: 118px;
+  padding-bottom: 32px;
+}
+.firms li {
+  margin-left: 35px;
+  margin-bottom: 18px;
+}
+.about-us-link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+.about-us a {
+  margin-right: 312px;
+  margin-top: 40px;
+}
+/*футер  */
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 33px;
+}
+.footer-site-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 38px;
+}
+.footer-site-navigation-link,
+.footer-catalog-navigation-link {
+  padding-left: 60px;
+}
+.footer-middle .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.footer-catalog-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.footer-bottom .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+.footer-copyright-tehnomart {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  margin-right: 150px;
+}
+.footer-bottom ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  margin-right: 110px;
+}
+.footer-contacts {
+  width: 139px;
+  margin: 0;
+  padding: 0;
+  margin-right: 50px;
+}
+.footer-copyright-htmlacademy {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* стили для catalog */
+.breadcrums-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.breadcrums-item:not(:first-child) {
+  padding-left: 40px;
+}
+.catalog h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog-filters {
+  width: 220px;
+}
+.catalog-perforator {
+  width: 700px;
+}
+.catalog h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #f7f3ec;
+  text-transform: uppercase;
+}
+.catalog-perforator-list {
+  width: 700px;
+  padding: 0;
+  margin: 0;
+  margin: 20px auto;
+
+}
+.catalog-perforator-item {
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.catalog-perforator-item:nth-child(3n) {
+  margin-right: 0;
+}
+.catalog-perforator-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+.catalog-perforator-item .flag-new {
+  background: url("img/new-flag.png") no-repeat 0 0;
+}
+.catalog-perforator-item .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.95);
+  z-index: 10;
+}
+.hover .hover-cart,
+.hover .hover-bookmark {
+  display: block;
+  margin-left: 42px;
+  margin-bottom: 7px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+}
+.catalog-perforator-item .hover{
+  display: none;
+}
+.catalog-perforator-item:hover .hover {
+  display: block;
+}
+
+.catalog-perforator-item h4 {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+}
+.price-perforator {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 44px;
+  margin-bottom: 18px;
+  padding-top: 10px;
+  padding-left: 3px;
+  padding-bottom: 10px;
+}
+.catalog-perforator-item:nth-child(3n) .price-perforator {
+  margin-top: 30px;
+}
+.price-perforator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -35px;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
