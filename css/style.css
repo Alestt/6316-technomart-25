@@ -494,6 +494,7 @@ input[type="radio"].visually-hidden {
 }
 .promo a {
   display: inline-block;
+  vertical-align: baseline;
   width: 138px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -669,12 +670,12 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-#promo-slide-1:checked ~ .promo-bottom-slider li:first-child,
-#promo-slide-2:checked ~ .promo-bottom-slider li:last-child {
+.promo-slide-1:checked ~ .promo-bottom-slider li:first-child,
+.promo-slide-2:checked ~ .promo-bottom-slider li:last-child {
   display: block;
 }
-#promo-slide-1:checked ~ .promo-slider-controls-2 label[for="promo-slide-1"],
-#promo-slide-2:checked ~ .promo-slider-controls-2 label[for="promo-slide-2"] {
+.promo-slide-1:checked ~ .promo-slider-controls-2 label[for="promo-slide-1"],
+.promo-slide-2:checked ~ .promo-slider-controls-2 label[for="promo-slide-2"] {
   background-color: #ee3643;
 }
 .promo-bottom-slider h3 {
@@ -794,7 +795,7 @@ input[type="radio"].visually-hidden {
 .popular-products .catalog-perforator-item:nth-child(4n) {
   margin-right: 0;
 }
-.popular-products .catalog-perforator-item:nth-child(4n) .price-perforator {
+.catalog-perforator-item .price-perforator-top {
   margin-top: 30px;
 }
 /* популярные производители */
@@ -946,6 +947,7 @@ input[type="radio"].visually-hidden {
 }
 .slider-item:last-child a {
   display: inline-block;
+  vertical-align: baseline;
   width: 195px;
   padding-top: 9px;
   padding-bottom: 9px;
@@ -975,14 +977,14 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-#service-1:checked ~ .slider-list li:first-child,
-#service-2:checked ~ .slider-list li:nth-child(2),
-#service-3:checked ~ .slider-list li:last-child {
+.service-1:checked ~ .slider-list li:first-child,
+.service-2:checked ~ .slider-list li:nth-child(2),
+.service-3:checked ~ .slider-list li:last-child {
   display: block;
 }
-#service-1:checked ~ .slider-controls label[for="service-1"],
-#service-2:checked ~ .slider-controls label[for="service-2"],
-#service-3:checked ~ .slider-controls label[for="service-3"] {
+.service-1:checked ~ .slider-controls label[for="service-1"],
+.service-2:checked ~ .slider-controls label[for="service-2"],
+.service-3:checked ~ .slider-controls label[for="service-3"] {
   color: #32425c;
   background-color: #fff;
   border-top: 1px solid #fff;
@@ -1019,6 +1021,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 25px;
 }
 .about-us p:nth-child(3) {
+  width: 390px;
   padding-bottom: 21px;
 }
 .contacts p {
@@ -1162,7 +1165,7 @@ input[type="radio"].visually-hidden {
   padding-left: 33px;
   padding-bottom: 20px;
 }
-.filters input[type="submit"] {
+.filters button[type="submit"] {
   width: 140px;
   margin-top: 53px;
   padding-top: 9px;
@@ -1227,6 +1230,7 @@ input[type="radio"].visually-hidden {
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   width: 50%;
 }
 .price-controls input {
@@ -1375,13 +1379,15 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
   border: none;
 }
-a.arrow {
+.sorting .arrow {
   display: inline-block;
+  vertical-align: baseline;
   font-size: 0;
 }
 .arrow::before {
   content: "";
   display: inline-block;
+  vertical-align: baseline;
   border: 10px solid #c5c5c5;
   border-left-width: 5px;
   border-right-width: 5px;
@@ -1410,11 +1416,6 @@ a.arrow {
   margin-left: 18px;
   border-bottom-width: 0;
 }
-
-
-
-
-
 /* catalog-perforator */
 .catalog-perforator-list {
   width: 700px;
@@ -1425,6 +1426,7 @@ a.arrow {
 .catalog-perforator-item {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 218px;
   margin-right: 15px;
   margin-bottom: 20px;
@@ -1439,9 +1441,6 @@ a.arrow {
 }
 .catalog-perforator-list .catalog-perforator-item:nth-child(3n) {
   margin-right: 0;
-}
-.catalog-perforator-list .catalog-perforator-item:nth-child(3n) .price-perforator {
-  margin-top: 30px;
 }
 .catalog-perforator-item a {
   font-size: 18px;
@@ -1561,9 +1560,9 @@ a.arrow {
   opacity: 1;
 }
 .hover-cart:focus::before{
-  opacity: 0.3;
+  background-color: #518534;
+  opacity: 1;
 }
-
 .hover .hover-bookmark {
   width: 127px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1699,6 +1698,7 @@ a.arrow {
   padding-bottom: 50px;
 }
 .footer-address {
+  width: 335px;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -1866,6 +1866,7 @@ a.arrow {
 }
 .modal-next-actions a {
   display: inline-block;
+  vertical-align: baseline;
   width: 220px;
   font-size: 14px;
   line-height: 18px;
