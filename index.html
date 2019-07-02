@@ -54,7 +54,7 @@
               <li class="main-navigation-item">
                 <a class="main-navigation-link">Главная</a>
               </li>
-              <li>
+              <li class="main-navigation-item">
                 <a class="main-navigation-link" href="#">Компания</a>
               </li>
               <li class="main-navigation-item">
@@ -95,7 +95,7 @@
             </li>
             <li>
               <h3>Техника</h3>
-              <a href="#">Для стройки</a>
+              <a class="tech" href="#">Для стройки</a>
             </li>
           </ul>
 
@@ -313,10 +313,10 @@
           <section class="contacts">
             <h2 class="heading">Контакты</h2>
             <p class="paragrath">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="#">
+            <a class="modal-map-btn" href="#">
               <img src="img/map-small.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
             </a>
-            <a class="about-us-link" href="#">Заблудились? Напишите нам!</a>
+            <a class="about-us-link contacts-about-us-link" href="#">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -436,11 +436,11 @@
         <div class="write-us-wrapper">
         <p class="write-us-item">
           <label for="write-us-name">Ваше имя:</label>
-          <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="write-us-name" id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="write-us-item">
           <label for="write-us-email">Ваш e-mail:</label>
-          <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+          <input class="write-us-email" id="write-us-email" type="email" name="email" placeholder="email@example.com">
         </p>
         </div>
         <p class="write-us-item">
@@ -455,10 +455,12 @@
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.211479112242!2d30.31892544635698!3d59.93897340148991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472808971872" width="940" height="446" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         <p class="map-item">
           <img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
