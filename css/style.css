@@ -534,7 +534,7 @@ input[type="radio"].visually-hidden {
 }
 .menu-promo-top-list li {
   position: relative;
-  width: 278px;
+  width: 276px;
   min-height: 79px;
   margin-bottom: 20px;
   padding-left: 22px;
@@ -601,8 +601,8 @@ input[type="radio"].visually-hidden {
 }
 /* промо слайдер */
 .menu-promo-bottom-item:first-child {
-  width: 596px;
-  min-height: 266px;
+  width: 595px;
+  min-height: 264px;
   background-color: #ccc;
 }
 .promo-slider-controls-1 label,
@@ -711,7 +711,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
 }
 .promo-bottom-slider a {
-  width: 101px;
+  width: 102px;
   margin-top: 121px;
   margin-left: 1px;
   padding-top: 11px;
@@ -737,7 +737,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 }
 .promo-bottom-list li {
-  width: 278px;
+  width: 275px;
   min-height: 79px;
   margin-bottom: 20px;
   padding-left: 23px;
@@ -1081,7 +1081,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 21px;
 }
 .contacts p {
-  padding-right: 118px;
+  width: 180px;
   padding-bottom: 32px;
 }
 .firms {
