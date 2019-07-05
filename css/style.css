@@ -2068,6 +2068,7 @@ input[type="radio"].visually-hidden {
   height: 446px;
   margin-top: -223px;
   margin-left: -470px;
+  background-color: #ccc;
 }
 .modal-map p {
   position: absolute;
