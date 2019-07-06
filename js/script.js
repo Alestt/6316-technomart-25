@@ -1,3 +1,24 @@
+var linkbuy = document.querySelectorAll(".hover-cart");
+var buy = document.querySelector(".modal-next-actions");
+var closebuy = buy.querySelector(".modal-close");
+
+for(var i=0;i<linkbuy.length;i++)linkbuy[i].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buy.classList.add("modal-show");
+ });
+
+ closebuy.addEventListener("click", function (evt) {
+   buy.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (buy.classList.contains("modal-show")) {
+        evt.preventDefault();
+        buy.classList.remove("modal-show");
+      }
+    }
+  });
 
 var linkletter = document.querySelector(".contacts-about-us-link");
 var letter = document.querySelector(".modal-write-us");
@@ -80,25 +101,3 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
-
-  var linkbuy = document.querySelectorAll(".hover-cart");
-  var buy = document.querySelector(".modal-next-actions");
-  var closebuy = buy.querySelector(".modal-close");
-
-  for(var i=0;i<linkbuy.length;i++)linkbuy[i].addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buy.classList.add("modal-show");
-   });
-
-   closebuy.addEventListener("click", function (evt) {
-     buy.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        if (buy.classList.contains("modal-show")) {
-          evt.preventDefault();
-          buy.classList.remove("modal-show");
-        }
-      }
-    });
